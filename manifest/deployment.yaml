@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-pipeline-app
+  labels:
+    app: cicd-pipeline-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-pipeline-app
+  template:
+    metadata:
+      labels:
+        app: cicd-pipeline-app
+    spec:
+      containers:
+        - name: cicd-pipeline-node
+          image: $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG # Placeholder for image
+          ports:
+            - containerPort: 8080
+
