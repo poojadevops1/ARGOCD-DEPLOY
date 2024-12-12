@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cicd-pipeline-node
-          image: $DOCKER_REGISTRY/$IMAGE_NAME:$IMAGE_TAG # Placeholder for image
+          image: poojadevops1012/cicd-pipeline-node:v24
           ports:
             - containerPort: 8080
 
