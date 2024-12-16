@@ -11,5 +11,5 @@ spec:
     - name: cicd-pipeline-node
       protocol: TCP
       port: 4001
-      targetPort: 8080
+      targetPort: 80
   type: LoadBalancer
