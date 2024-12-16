@@ -5,7 +5,7 @@ metadata:
   labels:
     app: cicd-pipeline-app
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: cicd-pipeline-app
