@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cicd-pipeline-node
-          image: poojadevops1012/cicd-pipeline-node:v10
+          image: poojadevops1012/cicd-pipeline-node:v11
           ports:
             - containerPort: 8080
 
